@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgis/postgis
+    environment:
+      POSTGRES_DB: vodafonedb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
